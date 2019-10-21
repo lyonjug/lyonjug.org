@@ -1,0 +1,20 @@
+@font-face {
+    /* https://fonts.google.com/specimen/Ubuntu */
+    font-family: "Ubuntu";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Ubuntu Regular"), local("Ubuntu-Regular"), url(../webfonts/Ubuntu-Regular.ttf) format("truetype");
+}
+
+.font-ubuntu {
+    font-family: "Ubuntu", sans-serif;
+}
+
+.pt-custom {
+    padding-top: 5rem;
+}
+
+.splash {
+    width: 100%;
+    margin-top: -2rem;
+}
