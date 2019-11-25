@@ -49,3 +49,18 @@
     width: 150px;
     margin: 0 1em 25px 25px;
 }
+
+.small-logo {
+    height: auto;
+    width: 64px;
+    margin: 0 2em;
+}
+
+.team-member {
+    margin-bottom: 2em;
+}
+
+img.member {
+    margin: 0 1em;
+    max-width: 150px;
+}
