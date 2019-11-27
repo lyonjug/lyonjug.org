@@ -57,10 +57,11 @@
 }
 
 .team-member {
-    margin-bottom: 2em;
+    margin-bottom: 1em;
 }
 
 img.member {
     margin: 0 1em;
     max-width: 150px;
+    max-height: 150px;
 }
