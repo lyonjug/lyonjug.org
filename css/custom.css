@@ -55,6 +55,11 @@ img.homelink {
     padding-top: 1em;
 }
 
+#no-future-event {
+    font-style: italic;
+    color: gray;
+}
+
 .logo {
     height: auto;
     width: 150px;
@@ -75,4 +80,10 @@ img.member {
     margin: 0 1em;
     max-width: 150px;
     max-height: 150px;
+}
+
+a.signup {
+    margin: 1em;
+    background-color: #007396;
+    border-color: #007396;
 }

@@ -1,0 +1,17 @@
+---
+layout: page
+---
+
+<div class="container">
+
+    <h1>{{ page.date | date_to_string }} : {{ page.title }}</h1>
+
+    <p>Lieu : <a href="{{ page.address-link }}">{{ page.address }}</a></p>
+
+    {% include event-signup.html %}
+
+    {{ content }}
+
+    {% include event-signup.html %}
+
+</div>
