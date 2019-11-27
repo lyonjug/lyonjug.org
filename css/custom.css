@@ -65,3 +65,9 @@ img.member {
     max-width: 150px;
     max-height: 150px;
 }
+
+a.signup {
+    margin: 1em;
+    background-color: #007396;
+    border-color: #007396;
+}
