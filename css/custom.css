@@ -14,6 +14,13 @@
     padding-top: 5rem;
 }
 
+a:hover {
+    color: #E50043;
+}
+a {
+    color: #007396
+}
+
 img.homelink {
     max-height: 40px;
 }
