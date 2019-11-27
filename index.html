@@ -22,9 +22,17 @@ layout: default
 
     <div class="next-event">
 
-        <h2>Evènement à venir :</h2>
+        <h2>Evènement(s) à venir :</h2>
 
-        <p><a href="https://www.meetup.com/fr-FR/lyonjug/events/266265469/">28/11/2019 : Pourquoi Gradle ?</a></p>
+        {% capture nowunix %}{{'today' | date: '%Y-%m-%d'}}{% endcapture %}
+        {% for post in site.posts reversed %}
+            {% capture posttime %}{{post.date | date: '%Y-%m-%d'}}{% endcapture %}
+            {% if nowunix <= posttime %}
+                <p future-date="{{ post.date | date: '%Y%m%d' }}"><a href="{{ post.url }}">{{ post.date | date_to_string }} : {{ post.title }}</a></p>
+            {% endif %}
+        {% endfor %}
+
+        <p id="no-future-event" hidden="hidden">Aucun évènement planifié... pour le moment !</p>
 
     </div>
 
@@ -43,3 +51,15 @@ layout: default
 <footer class="page-footer font-small pt-4 bg-light shadow">
     {% include copyright.html %}
 </footer>
+
+<script>
+    var elements = document.querySelectorAll('[future-date]');
+    Array.prototype.forEach.call(elements, function(el, i){
+        if(el.getAttribute('future-date').split('-').join('') < getCompareDate()) el.remove();
+    });
+    // check if some events remain
+    elements = document.querySelectorAll('[future-date]');
+    if(elements.length === 0) {
+        document.getElementById('no-future-event').removeAttribute('hidden');
+    }
+</script>
