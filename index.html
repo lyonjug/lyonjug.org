@@ -32,6 +32,8 @@ layout: default
             {% endif %}
         {% endfor %}
 
+        <p id="no-future-event" hidden="hidden">Aucun évènement planifié... pour le moment !</p>
+
     </div>
 
 
@@ -58,4 +60,9 @@ layout: default
     Array.prototype.forEach.call(elements, function(el, i){
         if(el.getAttribute('future-date').split('-').join('') < getCompareDate()) el.remove();
     });
+    // check if some events remain
+    elements = document.querySelectorAll('[future-date]');
+    if(elements.length === 0) {
+        document.getElementById('no-future-event').removeAttribute('hidden');
+    }
 </script>

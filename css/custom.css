@@ -44,6 +44,11 @@
     padding-top: 1em;
 }
 
+#no-future-event {
+    font-style: italic;
+    color: gray;
+}
+
 .logo {
     height: auto;
     width: 150px;
