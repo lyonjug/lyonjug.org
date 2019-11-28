@@ -28,7 +28,7 @@ layout: default
         {% for post in site.posts reversed %}
             {% capture posttime %}{{post.date | date: '%Y-%m-%d'}}{% endcapture %}
             {% if nowunix <= posttime %}
-                <p><a href="{{ post.url }}">{{ post.date | date_to_string }} : {{ post.title }}</a></p>
+                <p future-date="{{ post.date | date: '%Y%m%d' }}"><a href="{{ post.url }}">{{ post.date | date_to_string }} : {{ post.title }}</a></p>
             {% endif %}
         {% endfor %}
 
@@ -52,3 +52,10 @@ layout: default
     </div>
 
 </div>
+
+<script>
+    var elements = document.querySelectorAll('[future-date]');
+    Array.prototype.forEach.call(elements, function(el, i){
+        if(el.getAttribute('future-date').split('-').join('') < getCompareDate()) el.remove();
+    });
+</script>
