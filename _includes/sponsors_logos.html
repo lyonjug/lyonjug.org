@@ -1,11 +1,5 @@
 <div class="d-flex justify-content-center">
-    {% if page.sponsor-1 %}
-    {% include {{ page.sponsor-1 }}.html logo-class="logo" %}
-    {% endif %}
-    {% if page.sponsor-2 %}
-    {% include {{ page.sponsor-2 }}.html logo-class="logo" %}
-    {% endif %}
-    {% if page.sponsor-3 %}
-    {% include {{ page.sponsor-3 }}.html logo-class="logo" %}
-    {% endif %}
+    {% for sponsor in site.sponsors %}
+        {% include sponsor.html logo-class='logo' logo=sponsor.logo website=sponsor.website name=sponsor.name %}
+    {% endfor %}
 </div>

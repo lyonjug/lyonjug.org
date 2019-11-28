@@ -1,8 +1,11 @@
 
 
+collections:
+  - sponsors
+  - partners
+
 defaults:
-  -
-    scope:
+  - scope:
       path: "" # an empty string here means all files in the project
     values:
       partner-1: "insa"

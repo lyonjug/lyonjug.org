@@ -9,49 +9,21 @@ layout: default
 
     <div class="container">
         <div class="row">
-            {% if page.sponsor-1 %}
+            {% for sponsor in site.sponsors %}
             <div class="col mb-4">
                 <div class="view overlay z-depth-1-half">
-                    {% include {{ page.sponsor-1 }}.html logo-class="small-logo" %}
+                    {% include sponsor.html logo-class='small-logo' logo=sponsor.logo website=sponsor.website name=sponsor.name %}
                 </div>
             </div>
-            {% endif %}
-            {% if page.sponsor-2 %}
-            <div class="col mb-4">
-                <div class="view overlay z-depth-1-half">
-                    {% include {{ page.sponsor-2 }}.html logo-class="small-logo" %}
-                </div>
-            </div>
-            {% endif %}
-            {% if page.sponsor-3 %}
-            <div class="col mb-4">
-                <div class="view overlay z-depth-1-half">
-                    {% include {{ page.sponsor-3 }}.html logo-class="small-logo" %}
-                </div>
-            </div>
-            {% endif %}
-            {% if page.partner-1 %}
-            <div class="col mb-4">
-                <div class="view overlay z-depth-1-half">
-                    {% include {{ page.partner-1 }}.html logo-class="small-logo" %}
+            {% endfor %}
 
-                </div>
-            </div>
-            {% endif %}
-            {% if page.partner-2 %}
+            {% for partner in site.partners %}
             <div class="col mb-4">
                 <div class="view overlay z-depth-1-half">
-                    {% include {{ page.partner-2 }}.html logo-class="small-logo" %}
+                    {% include sponsor.html logo-class='small-logo' logo=partner.logo website=partner.website name=partner.name %}
                 </div>
             </div>
-            {% endif %}
-            {% if page.partner-3 %}
-            <div class="col mb-4">
-                <div class="view overlay z-depth-1-half">
-                    {% include {{ page.partner-3 }}.html logo-class="small-logo" %}
-                </div>
-            </div>
-            {% endif %}
+            {% endfor %}
         </div>
     </div>
 
