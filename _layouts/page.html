@@ -9,26 +9,49 @@ layout: default
 
     <div class="container">
         <div class="row">
-            <div class="col-md-3 mb-4">
+            {% if page.sponsor-1 %}
+            <div class="col mb-4">
                 <div class="view overlay z-depth-1-half">
-                    <a href="https://www.neo-soft.fr/"><img class="small-logo" src="images/logo-neo-soft-groupe-bleu.png" alt="Logo Neo Soft"/></a>
+                    {% include {{ page.sponsor-1 }}.html logo-class="small-logo" %}
                 </div>
             </div>
-            <div class="col-md-3 mb-4">
+            {% endif %}
+            {% if page.sponsor-2 %}
+            <div class="col mb-4">
                 <div class="view overlay z-depth-1-half">
-                    <a href="https://fr.bonitasoft.com/"><img class="small-logo" src="images/logo-bonitasoft-color.png" alt="Logo BonitaSoft"/></a>
+                    {% include {{ page.sponsor-2 }}.html logo-class="small-logo" %}
                 </div>
             </div>
-            <div class="col-md-3 mb-4">
+            {% endif %}
+            {% if page.sponsor-3 %}
+            <div class="col mb-4">
                 <div class="view overlay z-depth-1-half">
-                    <a href="https://www.insa-lyon.fr/"><img class="small-logo" src="images/insa.jpg" alt="Logo INSA de Lyon"/></a>
+                    {% include {{ page.sponsor-3 }}.html logo-class="small-logo" %}
                 </div>
             </div>
-            <div class="col-md-3 mb-4">
+            {% endif %}
+            {% if page.partner-1 %}
+            <div class="col mb-4">
                 <div class="view overlay z-depth-1-half">
-                    <a href="https://www.jetbrains.com/fr-fr/idea/"><img class="small-logo img-fluid" src="images/intellijidea.png" alt="Logo IntelliJ IDEA"/></a>
+                    {% include {{ page.partner-1 }}.html logo-class="small-logo" %}
+
                 </div>
             </div>
+            {% endif %}
+            {% if page.partner-2 %}
+            <div class="col mb-4">
+                <div class="view overlay z-depth-1-half">
+                    {% include {{ page.partner-2 }}.html logo-class="small-logo" %}
+                </div>
+            </div>
+            {% endif %}
+            {% if page.partner-3 %}
+            <div class="col mb-4">
+                <div class="view overlay z-depth-1-half">
+                    {% include {{ page.partner-3 }}.html logo-class="small-logo" %}
+                </div>
+            </div>
+            {% endif %}
         </div>
     </div>
 
