@@ -22,9 +22,15 @@ layout: default
 
     <div class="next-event">
 
-        <h2>Evènement à venir :</h2>
+        <h2>Evènement(s) à venir :</h2>
 
-        <p><a href="{% post_url 2019-11-28-pourquoi-gradle %}">28/11/2019 : Pourquoi Gradle ?</a></p>
+        {% capture nowunix %}{{'today' | date: '%Y-%m-%d'}}{% endcapture %}
+        {% for post in site.posts reversed %}
+            {% capture posttime %}{{post.date | date: '%Y-%m-%d'}}{% endcapture %}
+            {% if nowunix <= posttime %}
+                <p><a href="{{ post.url }}">{{ post.date | date_to_string }} : {{ post.title }}</a></p>
+            {% endif %}
+        {% endfor %}
 
     </div>
 

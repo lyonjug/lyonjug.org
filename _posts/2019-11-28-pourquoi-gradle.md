@@ -4,12 +4,11 @@ title:  "Pourquoi Gradle ?"
 address: "INSA Lyon, Amphi Télécom, 6 Avenue des Arts, Villeurbanne"
 address-link: "https://goo.gl/maps/jJfcfezozUTjGz3J6"
 meetup-event-id: "266265469"
-
 ---
 
 **19h00 à 19h15 : Accueil**
 
-**19h15 à 22H30 : Pourquoi Gradle ?**
+**19h15 à 22H30 : {{ page.title }}**
 
 Gradle, l'outil de build, fait partie de l'écosystème Java depuis un moment déjà.
 Sa puissance le rend parfois difficile à appréhender.
