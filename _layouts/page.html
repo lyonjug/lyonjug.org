@@ -9,7 +9,7 @@ layout: default
 
     <div class="container">
         <div class="row">
-            {% for sponsor in site.sponsors %}
+            {% for sponsor in site.data.sponsors %}
             <div class="col mb-4">
                 <div class="view overlay z-depth-1-half">
                     {% include sponsor.html logo-class='small-logo' logo=sponsor.logo website=sponsor.website name=sponsor.name %}
@@ -17,7 +17,7 @@ layout: default
             </div>
             {% endfor %}
 
-            {% for partner in site.partners %}
+            {% for partner in site.data.partners %}
             <div class="col mb-4">
                 <div class="view overlay z-depth-1-half">
                     {% include sponsor.html logo-class='small-logo' logo=partner.logo website=partner.website name=partner.name %}

@@ -1,5 +1,5 @@
 <div class="d-flex justify-content-center">
-    {% for partner in site.partners %}
+    {% for partner in site.data.partners %}
     {% include sponsor.html logo-class='logo' logo=partner.logo website=partner.website name=partner.name %}
     {% endfor %}
 </div>
