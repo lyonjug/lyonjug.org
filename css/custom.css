@@ -14,7 +14,49 @@
     padding-top: 5rem;
 }
 
+a:hover {
+    color: #E50043;
+}
+a {
+    color: #007396
+}
+
+img.homelink {
+    max-height: 40px;
+}
+
 .splash {
     width: 100%;
     margin-top: -2rem;
+}
+
+.title {
+    width: 80%;
+    text-align: center;
+    margin: 2em auto;
+    padding-top: 1em;
+}
+
+.subtitle {
+    text-align: center;
+    margin: 1em auto;
+}
+
+.presentation {
+    text-align: center;
+}
+
+.next-event {
+    border-style: solid;
+    border-width: 1px;
+    width: 80%;
+    text-align: center;
+    margin: 2em auto;
+    padding-top: 1em;
+}
+
+.logo {
+    height: auto;
+    width: 150px;
+    margin: 0 1em 25px 25px;
 }
