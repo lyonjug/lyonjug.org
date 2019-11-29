@@ -1,0 +1,7 @@
+- name: "IntelliJ IDEA"
+  website: "https://www.jetbrains.com/fr-fr/idea/"
+  logo: "intellijidea.png"
+
+- name: "INSA de Lyon"
+  website: "https://www.insa-lyon.fr/"
+  logo: "insa.jpg"
