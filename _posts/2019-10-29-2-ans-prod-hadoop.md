@@ -1,5 +1,4 @@
 ---
-layout: event
 title:  "REX : 2 ans de prod d'un cluster Hadoop"
 address: "INSA Lyon, Amphi Télécom, 6 Avenue des Arts, Villeurbanne"
 address-link: "https://goo.gl/maps/jJfcfezozUTjGz3J6"

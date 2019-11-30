@@ -1,5 +1,4 @@
 ---
-layout: event
 title:  "Quoi de neuf, RabbitMQ ?"
 address: "INSA Lyon, Amphi Télécom, 6 Avenue des Arts, Villeurbanne"
 address-link: "https://goo.gl/maps/jJfcfezozUTjGz3J6"
