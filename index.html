@@ -31,18 +31,15 @@ layout: default
 
     <h2 class="subtitle">Nos sponsors</h2>
 
-    <div class="d-flex justify-content-center">
-        <a href="https://www.neo-soft.fr/"><img class="logo" src="images/logo-neo-soft-groupe-bleu.png" alt="Logo Neo Soft"/></a>
-        <a href="https://fr.bonitasoft.com/"><img class="logo" src="images/logo-bonitasoft-color.png" alt="Logo BonitaSoft"/></a>
-    </div>
+    {% include sponsors_logos.html %}
 
     <hr/>
 
     <h2 class="subtitle">Nos partenaires</h2>
 
-    <div class="d-flex justify-content-center">
-        <a href="https://www.insa-lyon.fr/"><img class="logo" src="images/insa.jpg" alt="Logo INSA de Lyon"/></a>
-        <a href="https://www.jetbrains.com/fr-fr/idea/"><img class="logo" src="images/intellijidea.png" alt="Logo IntelliJ IDEA"/></a>
-    </div>
-
+    {% include partners_logos.html logo-class="logo" %}
 </div>
+
+<footer class="page-footer font-small pt-4 bg-light shadow">
+    {% include copyright.html %}
+</footer>
