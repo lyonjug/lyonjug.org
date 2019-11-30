@@ -8,10 +8,19 @@ layout: page
 
     <p>Lieu : <a href="{{ page.address-link }}">{{ page.address }}</a></p>
 
+    {% capture nowunix %}{{'today' | date: '%Y-%m-%d'}}{% endcapture %}
+    {% capture posttime %}{{page.date | date: '%Y-%m-%d'}}{% endcapture %}
+
+    {% if nowunix <= posttime and page.meetup-event-id %}
     {% include event-signup.html %}
+    {% else %}
+    <p id="no-future-event">Il n'est pas possible de s'inscrire pour cet évènement.</p>
+    {% endif %}
 
     {{ content }}
 
+    {% if nowunix <= posttime and page.meetup-event-id %}
     {% include event-signup.html %}
+    {% endif %}
 
 </div>
