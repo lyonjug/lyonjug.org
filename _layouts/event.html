@@ -6,7 +6,7 @@ layout: page
 
     <h1>{{ page.date | date_to_string }} : {{ page.title }}</h1>
 
-    <p>Lieu : <a href="{{ page.address-link }}">{{ page.address }}</a></p>
+    <p>Lieu : <a href="{{ page.address-link }}" target="_blank">{{ page.address }}</a></p>
 
     {% capture nowunix %}{{'today' | date: '%Y-%m-%d'}}{% endcapture %}
     {% capture posttime %}{{page.date | date: '%Y-%m-%d'}}{% endcapture %}
