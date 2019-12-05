@@ -87,3 +87,8 @@ a.signup {
     background-color: #007396;
     border-color: #007396;
 }
+
+a.signup:hover {
+    background-color: #E50043;
+    border-color: #E50043;
+}
