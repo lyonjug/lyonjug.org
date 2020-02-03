@@ -14,7 +14,7 @@ Avec de plus en plus d'applications "dockerisées", [Testcontainers](https://www
 En partant d'une application SpringBoot classique, en l'occurrence [Spring PetClinic](https://github.com/spring-projects/spring-petclinic), nous vous proposons d'utiliser la puissance de Docker au sein de votre pipeline de tests d'intégration grâce à la librairie Testcontainers.
 Cette dernière est une bibliothèque Java permettant de simplifier la gestion du cycle de vie des conteneurs durant la phase de test.
 
-Les applications que nous produisons sont de plus en plus connectées et de plus en plus dépendantes de ressources externes tel qu'une base de données, un broker de messages, un service de messagerie, etc.
+Les applications que nous produisons sont de plus en plus connectées et de plus en plus dépendantes de ressources externes telles qu'une base de données, un broker de messages, un service de messagerie, etc.
 Afin de réaliser des tests qui communiquent avec ces ressources externes, nous avons habituellement recours à des librairies de mock, des services embarqués en mémoire, ou des installations en local.
 
 Mettre en place des tests s'intégrant avec toutes ces briques est fastidieux et coûteux en terme de mise en place et de développement.
