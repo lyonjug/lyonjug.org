@@ -61,9 +61,11 @@ img.homelink {
 }
 
 .logo {
-    height: auto;
-    width: 150px;
+    height: 100%;
+    width: 200px;
     margin: 0 1em 25px 25px;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .small-logo {
