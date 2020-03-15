@@ -1,9 +1,11 @@
 ---
-title: "Utiliser Spring Boot sur Azure"
+title: "ANNULÉ - Utiliser Spring Boot sur Azure"
 address: "INSA Lyon, Amphi Télécom, 6 Avenue des Arts, Villeurbanne"
 address-link: "https://goo.gl/maps/jJfcfezozUTjGz3J6"
-meetup-event-id: "268581255"
 ---
+
+**Évènement annulé** du fait de la situation sanitaire liée au COVID-19. 
+Nous essairons de le planifier de nouveau ultérieurement.
 
 **19h00 à 19h15 : Accueil**
 
