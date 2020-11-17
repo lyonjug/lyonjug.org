@@ -1,26 +1,21 @@
 ---
 layout: page
 ---
+<h1>{{ page.date | date_to_string }} : {{ page.title }}</h1>
 
-<div class="container">
+<p>Lieu : <a href="{{ page.address-link }}" target="_blank">{{ page.address }}</a></p>
 
-    <h1>{{ page.date | date_to_string }} : {{ page.title }}</h1>
+{% capture nowunix %}{{'today' | date: '%Y-%m-%d'}}{% endcapture %}
+{% capture posttime %}{{page.date | date: '%Y-%m-%d'}}{% endcapture %}
 
-    <p>Lieu : <a href="{{ page.address-link }}" target="_blank">{{ page.address }}</a></p>
+{% if nowunix <= posttime and page.meetup-event-id %}
+{% include event-signup.html %}
+{% else %}
+<p id="no-future-event">Il n'est pas possible de s'inscrire pour cet évènement.</p>
+{% endif %}
 
-    {% capture nowunix %}{{'today' | date: '%Y-%m-%d'}}{% endcapture %}
-    {% capture posttime %}{{page.date | date: '%Y-%m-%d'}}{% endcapture %}
+{{ content }}
 
-    {% if nowunix <= posttime and page.meetup-event-id %}
-    {% include event-signup.html %}
-    {% else %}
-    <p id="no-future-event">Il n'est pas possible de s'inscrire pour cet évènement.</p>
-    {% endif %}
-
-    {{ content }}
-
-    {% if nowunix <= posttime and page.meetup-event-id %}
-    {% include event-signup.html %}
-    {% endif %}
-
-</div>
+{% if nowunix <= posttime and page.meetup-event-id %}
+{% include event-signup.html %}
+{% endif %}
