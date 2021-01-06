@@ -22,9 +22,17 @@ layout: default
 
     <div class="next-event">
 
-        <a href="/pause-covid.html">COVID-19 : Mise en pause des activités</a>
+        <h2>Evènement(s) à venir&nbsp;:</h2>
 
-        <p id="no-future-event" hidden="hidden">Aucun évènement planifié... pour le moment ! Le LyonJUG reviendra dès que possible.</p>
+        {% capture nowunix %}{{'today' | date: '%Y-%m-%d'}}{% endcapture %}
+        {% for post in site.posts reversed %}
+            {% capture posttime %}{{post.date | date: '%Y-%m-%d'}}{% endcapture %}
+            {% if nowunix <= posttime %}
+                <p future-date="{{ post.date | date: '%Y%m%d' }}"><a href="{{ post.url }}">{{ post.date | date_to_string }} : {{ post.title }}</a></p>
+            {% endif %}
+        {% endfor %}
+
+        <p id="no-future-event" hidden="hidden">Aucun évènement planifié... pour le moment !</p>
 
     </div>
 
