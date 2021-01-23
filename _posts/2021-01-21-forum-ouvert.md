@@ -20,7 +20,7 @@ Nous faisons cette session conjointement avec les Software Crafters de Lyon car 
 #### Salle 1 : Le DDD, comment l'aborder ? Comment l'appliquer ?
 Faire du DDD: orientation métier, mettre au centre le métier, distinguer le métier pour faire en sorte que l'application reste maintenable.
 
-Context technique : pertinent de faire du DDD ? une question de besoin de performance ?
+Contexte technique : pertinent de faire du DDD ? une question de besoin de performance ?
 Le critère est plutôt la complexité du métier.
 Le pattern "stratégie" peut permettre de bien délimiter les parties techniques ou simples et les parties complexes.
 
