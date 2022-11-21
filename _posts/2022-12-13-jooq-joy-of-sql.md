@@ -2,7 +2,7 @@
 title: "jOOQ, Joy of SQL"
 address: "Zenika Lyon, 5 Place Jules Ferry, Lyon"
 address-link: "https://g.page/zenika-lyon?share"
-meetup-event-id: "TODO"
+meetup-event-id: "289896043"
 ---
 
 **19h00 à 19h15 : Accueil**
