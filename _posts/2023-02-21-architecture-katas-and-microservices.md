@@ -1,7 +1,7 @@
 ---
 title: "Architecture & Microservices"
-address: "Zenika Lyon, 5 Place Jules Ferry, Lyon"
-address-link: "https://g.page/zenika-lyon?share"
+address: "Ideme, 107 Bd Marius Vivier Merle, 69003 Lyon"
+address-link: "https://goo.gl/maps/bJBYQdfbt5JiFBhWA"
 meetup-event-id: "290953607"
 ---
 
