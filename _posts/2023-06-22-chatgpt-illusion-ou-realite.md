@@ -1,7 +1,7 @@
 ---
 title: "Conversations avec ChatGPT : illusion ou réalité ?"
-address: "Zenika, 6 Place Jules Ferry, Lyon"
-address-link: "https://g.page/zenika-lyon?share"
+address: "SII, Immeuble Danica, 17 Av. Georges Pompidou, 69003 Lyon"
+address-link: "https://goo.gl/maps/XDwNbDMZUAYcLUmk6"
 meetup-event-id: "293949285"
 ---
 
