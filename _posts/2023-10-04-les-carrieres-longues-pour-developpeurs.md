@@ -6,7 +6,7 @@ meetup-event-id: "296140980"
 ---
 
 C'est la rentrée du LyonJUG :)  
-Et pour bien démarrer nous accueillons *Stephen Kitt* :
+Et pour bien démarrer nous accueillons **Stephen Kitt** ([https://twitter.com/thekittster](https://twitter.com/thekittster)) :
 
 " En complément à la présentation du 28 juin 2022 donnée par Hugo Lassiège et Dimitri Baeli, venez découvrir les rôles de développeur (très) sénior, vus de l'intérieur.
 
