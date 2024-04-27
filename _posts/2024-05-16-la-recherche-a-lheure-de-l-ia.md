@@ -16,5 +16,5 @@ Cette conférence donne un aperçu de :
 
 La démo principale montre comment générer des embeddings à partir de musiques puis comment trouver la musique qui s'approche le plus de ce que nous fredonnons.
 
-_Depuis 2013, David Pilato est développeur et évangéliste chez elastic.co, après avoir passé deux années à promouvoir le projet open-source Elasticsearch. 
-Il en anime la communauté française et organise des BBLs au sein des entreprises._
+_Depuis 2013, David Pilato est développeur et évangéliste chez [elastic.co](https://elastic.co), après avoir passé deux années à promouvoir le projet open-source Elasticsearch. 
+Il en anime la communauté française et organise des [BBLs](https://www.elastic.co/blog/free-lunch-for-open-source-engineers) au sein des entreprises._
