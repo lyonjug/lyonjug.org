@@ -1,8 +1,8 @@
 ---
 title: "Spring Boot CDS + Leyden / Paketo"
-address: "SII, bd Vivier Merle, Lyon"
-address-link: "tbd"
-meetup-event-id: "tbd"
+address: "SII, 120 bd Vivier Merle, Lyon"
+address-link: "https://maps.app.goo.gl/VNwKorUDmgiMvDax7"
+meetup-event-id: "304565702"
 ---
 
 Duo de conférences "théorie et pratique" :
