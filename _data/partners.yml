@@ -5,3 +5,7 @@
 - name: "INSA de Lyon"
   website: "https://www.insa-lyon.fr/"
   logo: "insa.jpg"
+
+  - name: "Devoxx"
+  website: "https://www.devoxx.fr/2025-accueil"
+  logo: "logo-devoxx-2025.png"
