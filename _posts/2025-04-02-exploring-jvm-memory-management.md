@@ -37,3 +37,10 @@ and garbage collection mechanisms cannot only be helpful for optimizing performa
 
 Gerrit Grunwald is a software engineer that loves coding for around 40 years already. He is a true believer in open source and he is an active member of the Java community, where he founded and leads the Java User Group Münster (Germany), he is a JavaOne rockstar and a Java Champion. He speaks 
 at conferences and user groups internationally and writes for several magazines.
+
+## Ressources
+
+*Paragraphe ajouté après la soirée*
+
+* [Slides](/slides/TrashTalk_GerritGrunwald.pdf)
+* [Animations](https://github.com/HanSolo/trashtalk)
